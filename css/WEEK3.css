@@ -78,15 +78,7 @@ body{
 
 @media (max-width:992px) {
     .container{
-        max-width: 720px;
-        padding: 0 36px;
-    }
-    
-}
-@media (max-width:576px) {
-    .container{
-        max-width: 548px;
-        padding: 0 12px;
+        max-width: 992px;
     }
 }
 .d-flex{
@@ -209,6 +201,7 @@ body{
 /* 表頭 */
 .nav{
     background-color: #AA0601;
+    flex-wrap: nowrap;
 }
 
 
@@ -222,25 +215,41 @@ body{
 }
 
 .menu{
-    gap: 64px;
     padding: 25px 0;
-    flex-wrap: wrap;
 }
 .menu li a{
     color: #FFFFFF;
     font-size: 20px;
+    display: block;
+    padding: 16px 32px;
 }
+
+@media (max-width:660px) {
+    .menu li a{
+        font-size: 16px;
+        line-height: 1;
+    }
+
+}
+@media (max-width:600px) {
+    .menu li a{
+        font-size: 14px;
+    }
+}
+
 @media (max-width:576px) {
     .menu{
-        gap:0;
         padding: 0;
         margin: 0 -12px;
+        flex-wrap: wrap;
     }
     .menu li {
         width: 50%;
         text-align: center;
         border: 1px solid white;
-        padding: 12px 62px;
+    }
+    .menu li a{
+        padding:16px 0;
     }
 }
 
@@ -265,7 +274,8 @@ body{
 }
 
 .bannerTitle{
-    padding: 296px 0;
+    padding-top:296px;
+    padding-bottom: 296px;
 }
 .bannerTitle .h1{
     margin-bottom: 10px;
@@ -273,7 +283,8 @@ body{
 @media (max-width:576px) {
     .bannerTitle{
         align-items: flex-end;
-        padding:144px 0;
+        padding-top: 144px;
+        padding-bottom: 144px;
     }
     .bannerTitle .h3{
         font-size: 16px;
@@ -309,6 +320,11 @@ body{
 }
 .card img{
     width: 100px;
+}
+
+.classic{
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .classicCard{
@@ -348,6 +364,10 @@ body{
 }
 
 /* 顧客回饋 */
+.recommend{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
 .recommendCard{
     box-shadow: 0px 2px 6px #00000029;
     border: 1px solid #DEE2E6;
@@ -382,17 +402,19 @@ body{
 .contact p{
     font-size: 20px;
 }
-.contactForm{
+.contact{
     width: 636px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 @media (max-width:768px) {
-    .contactForm{
+    .contact{
         width: 576px;
     }
 }
 @media (max-width:576px) {
-    .contactForm{
-        width: 348px;
+    .contact{
+        width: 375px;
     }
 }
 
@@ -406,6 +428,9 @@ body{
     border: 1px solid black;
     padding-left: 12px;
     margin-bottom: 16px;
+}
+.commentText{
+    height: 136px;
 }
 .checkbox{
     height: auto;
@@ -433,7 +458,7 @@ body{
 }
 @media (max-width:576px) {
     .footer{
-        padding: 24px 16px;
+        padding: 24px 14px;
     }
 }
 
@@ -461,6 +486,17 @@ body{
 }
 .footerRight img{
     width: 48px;
+}
+@media (max-width:576px) {
+    .footerRight{
+        gap: 8px;
+    }
+    .footerRight img{
+        width: 24px;
+    }
+    .footerIcon{
+        margin-right: 10px;
+    }
 }
 .footerContent{
     border-bottom: #FFFFFF solid 1px;
