@@ -81,6 +81,7 @@ body{
         max-width: 992px;
     }
 }
+
 .d-flex{
     display: flex;
 }
@@ -409,12 +410,18 @@ body{
 }
 @media (max-width:768px) {
     .contact{
-        width: 576px;
+        max-width: 576px;
     }
 }
 @media (max-width:576px) {
     .contact{
-        width: 375px;
+        max-width: 375px;
+    }
+}
+
+@media (max-width:374px) {
+    .contact{
+        max-width: 100%;
     }
 }
 
@@ -448,6 +455,11 @@ body{
 @media (max-width:576px) {
     .send{
         padding:16px 142px;
+    }
+}
+@media (max-width:375px) {
+    .send{
+        padding:16px 120px;
     }
 }
 
